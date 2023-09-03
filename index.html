@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titikon</title>
+</head>
+<body>
+    <style>
+        body {
+  background-color: rgb(135, 44, 143);
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+    </style>
+    <h1>ประวัติส่วนตัว</h1>
+    <p id="demo">ชื่อ นายฐิติกร ลี้สุวรรณ <br> ชื่อเล่น จิน <br> อายุ 21 ปี <br> ปัจจุบันกำลังศึกษาปริญญาตรี <br> ทำงานอยู่บริษัท โรงเรียนวัดประสาท <br> ตำแหน่ง เจ้าพนักงานธุรการ</p>
+
+    <button
+    type="button"
+        onclick="document.getElementById('demo').innerHTML = 'งานอดิเรก เล่นเกม,สตรีมเกม <br> แรงบันดาล ความท้าทายใหม่ๆในการใช้ชีวิต'"
+    >
+        งานอดิเรก
+    </button>
+    <br />
+    <button
+        type="button"
+        onclick="document.getElementById('demo').innerHTML = 'สิ่งที่ชอบ อนิเมะ,การนอน '"
+    >
+        สิ่งที่ชอบ
+    </button>
+    <br />
+    <button
+        type="button"
+        onclick="document.getElementById('demo').innerHTML = 'ชื่อ นายฐิติกร ลี้สุวรรณ <br> ชื่อเล่น จิน <br> อายุ 21 ปี <br> ปัจจุบันกำลังศึกษาปริญญาตรี <br> ทำงานอยู่บริษัท โรงเรียนวัดประสาท <br> ตำแหน่ง เจ้าพนักงานธุรการ'"
+    >
+        ย้อนกลับ
+    </button>
+</body>
+</html>

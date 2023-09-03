@@ -1,0 +1,20 @@
+<?php
+require_once '../database/db_connection.php';
+$username = $_POST['username'];
+$password = $_POST['password'];
+$Email    = $_POST['Email'];
+$Tel      = $_POST['Tel'];
+
+$sql = "INSERT INTO
+        users
+            (username,password,Email,Tel)
+        VALUES
+            ('$username','$password','$Email','$Tel')
+        ";
+if (mysqli_query($conn, $sql)){
+    header("Location: ../admin/userShow.php");
+    echo "New record create successfully.";
+} else {
+    echo "Error: " . $sql . '<br>'. mysqli_error($conn);
+}
+mysqli_close($conn);
